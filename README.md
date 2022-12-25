@@ -11,8 +11,7 @@
 
 - 物体検出などのデータ作成に使えるデータ収集アプリ
 
-![sample](https://user-images.githubusercontent.com/98692841/209472792-b675d898-f779-4075-86aa-e5eea0318a35.png)
-
+![sample](https://user-images.githubusercontent.com/98692841/209474513-56e13081-b5d3-4142-a0d6-0e6156258754.png)
 
 # 手順
 
