@@ -97,8 +97,8 @@ class App(tk.Frame):
         args
         ---------------
         
-        frame
-            フレームオブジェクト
+        frame : class
+            フレームの情報を持つクラス
         
         
         Methods
@@ -204,7 +204,7 @@ class App(tk.Frame):
         
         args
         ---------------
-        frame
+        frame : class
             tk.Tk()クラスを保持(フレーム情報を保持するクラスと考えればよい)
         ---------------
         
@@ -258,7 +258,7 @@ class App(tk.Frame):
         args
         ---------------
         
-        event : tkinter.Eventクラス
+        event : class
             左クリックしたイベントの情報が保持されたクラス
             event.x はクリックされたx座標
             event.y はクリックされたy座標
@@ -364,7 +364,7 @@ class App(tk.Frame):
         args
         ---------------
         
-        event : tkinter.Eventクラス
+        event : class
             ドラッグ状態の情報が保持されたクラス
             event.x は現在のx座標
             event.y は現在のy座標
@@ -386,7 +386,7 @@ class App(tk.Frame):
         args
         ---------------
         
-        event : tkinter.Eventクラス
+        event : class
             左クリックを離すというイベントの情報が保持されたクラス
             event.x は左クリックが離されたときのx座標
             event.y は左クリックが離されたときのy座標
