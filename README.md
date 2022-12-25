@@ -9,7 +9,7 @@
 
 # 概要
 
-- 物体検出のデータ作成に使えるデータ収集アプリ
+- 物体検出などのデータ作成に使えるデータ収集アプリ
 
 ![sample](https://user-images.githubusercontent.com/98692841/209472792-b675d898-f779-4075-86aa-e5eea0318a35.png)
 
