@@ -5,7 +5,7 @@ import os
 import re
 
 ori_data_path = "./data/ori_data/"
-print(tk._test())
+
 class App(tk.Frame):
     
     """
@@ -75,7 +75,6 @@ class App(tk.Frame):
         region_json_load = json.load(region_json_open)
         image_json_load = json.load(image_json_open)
         if region_json_load == None or image_json_load == None:
-            #print("a")
             pass
         else:
             for i,one_region_data in enumerate(region_json_load):
