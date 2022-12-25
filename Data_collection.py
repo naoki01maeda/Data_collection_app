@@ -1,12 +1,11 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-import pickle
 import json
 import os
 import re
 
 ori_data_path = "./data/ori_data/"
-
+print(tk._test())
 class App(tk.Frame):
     
     """
@@ -289,7 +288,7 @@ class App(tk.Frame):
         self.image_id = self.files[self.counter_img].split(".")[0]
         
         test_list = list(filter(None, self.box_start_list))
-        print(test_list)
+        
         if test_list != []:
             self.save_json(self.box_start_list, self.box_end_list, self.txt_var_list, self.check_var_list, self.image_id)#jsonファイルに記録
             image_id_list = [self.image_json_data[i]["image_id"] for i in range(len(self.image_json_data))]
