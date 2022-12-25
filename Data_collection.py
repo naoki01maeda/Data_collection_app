@@ -68,25 +68,24 @@ class App(tk.Frame):
     counter_img = 0
     region_id = 0
    
-    if os.path.exists(ori_data_path + 'region_descriptions.json') and os.path.exists(ori_data_path + 'image_data.json'):
+    if os.path.exists(ori_data_path + 'region_descriptions.json') and os.path.exists(ori_data_path + 'image_data.json'):#データファイルがすでに存在する場合
 
         region_json_open = open(ori_data_path + 'region_descriptions.json', 'r')
         image_json_open = open(ori_data_path + 'image_data.json', 'r')
         region_json_load = json.load(region_json_open)
         image_json_load = json.load(image_json_open)
-        if region_json_load == None or image_json_load == None:
-            pass
-        else:
-            for i,one_region_data in enumerate(region_json_load):
+        
+        for i,one_region_data in enumerate(region_json_load):
                 region_json_data.append(one_region_data)
-                if i == len(region_json_load)-1:
+                if i == len(region_json_load)-1:#最後のデータの画像IDと領域IDを取得
                     counter_img = region_json_data[-1]["id"]
                     region_id = region_json_data[-1]["regions"][-1]['region_id']
                     
                     
-            for i,one_image_data in enumerate(image_json_load):
-                image_json_data.append(one_image_data)
-    
+        for i,one_image_data in enumerate(image_json_load):
+            image_json_data.append(one_image_data)
+            
+        assert counter_img == image_json_data[-1]["image_id"]
     
     def __init__(self, frame):
         
