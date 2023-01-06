@@ -21,3 +21,33 @@
 - NEXTボタンを押すことでjsonファイルとして保存され、次の画像に推移
 - 繰り返す
 - 終了はウィンドウの右上の×ボタンをクリック
+
+# 保存形式
+```save_json
+[
+    {
+        "regions": [
+            {
+                "region_id": 1,
+                "width": 55,
+                "height": 121,
+                "image_id": 1,
+                "phrase": "Contact with a red sign on the left shoulder that says 'No Parking'",
+                "y": 474,
+                "x": 260,
+                "risk": 0
+            },
+            {
+                "region_id": 2,
+                "width": 290,
+                "height": 500,
+                "image_id": 1,
+                "phrase": "Contact with a white van parked on the right shoulder",
+                "y": 236,
+                "x": 706,
+                "risk": 0
+            }
+        ],
+        "id": 1
+    }
+```
